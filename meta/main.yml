@@ -1,0 +1,25 @@
+---
+dependencies:
+- role: troykinsella.archive
+  archive_file_name: go{{ go_version }}.{{ go_archive_os }}-{{ go_archive_architecture }}.tar.gz
+  archive_url: "{{ go_archive_base_url }}{{ archive_file_name }}"
+  archive_checksum: "{{ go_archive_checksum }}"
+  archive_checksum_type: "{{ go_archive_checksum_type }}"
+  archive_destination_path: "{{ go_archive_destination_path }}"
+  archive_extracted_dir_name: go
+
+galaxy_info:
+  author: Troy Kinsella
+  description: Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+  license: MIT
+  min_ansible_version: 1.6
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - utopic
+    - vivid
+    - wily
+  galaxy_tags:
+    - packaging
+  github_branch: master
