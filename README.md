@@ -11,13 +11,16 @@ Dependencies
 Role Variables
 --------------
 
-* go_version: The version of go to install
-* go_archive_os: The target operating system. Default: linux
-* go_archive_architecture: The target system architecture. Default: amd64
-* go_archive_base_url: The installation archive base URL. Default: https://storage.googleapis.com/golang/
-* go_archive_checksum: The expected installation archive checksum. Default: 43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
-* go_archive_checksum_type: The installation archive checksum algorithm. Default: sha256
-* go_archive_destination_path: The installation prefix directory path. Default: /usr/local
+* go_version: Optional. The version of go to install. Default: 1.5.3
+* go_archive_os: Optional. The target operating system. Default: linux
+* go_archive_architecture: Optional. The target system architecture. Default: amd64
+* go_archive_base_url: Optional. The installation archive base URL. Default: https://storage.googleapis.com/golang/
+* go_archive_checksum: Optional. The expected installation archive checksum. Default: 43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
+* go_archive_checksum_algorithm: Optional. The installation archive checksum algorithm. Default: sha256
+* go_archive_cache_path: Optional. The directory path into which the archive will be downloaded. Default: /usr/local/pkg
+* go_archive_destination_path: Optional. The installation prefix directory path. Default: /usr/local
+* go_archive_extracted_file_name: Optional. The expected name of the root file or directory that is extracted from the archive. Default: go
+* go_archive_destination_file_name: Optional. Rename the extracted directory to this value.
 
 Example Playbook
 ----------------

@@ -4,9 +4,11 @@ dependencies:
   archive_file_name: go{{ go_version }}.{{ go_archive_os }}-{{ go_archive_architecture }}.tar.gz
   archive_url: "{{ go_archive_base_url }}{{ archive_file_name }}"
   archive_checksum: "{{ go_archive_checksum }}"
-  archive_checksum_type: "{{ go_archive_checksum_type }}"
+  archive_checksum_algorithm: "{{ go_archive_checksum_algorithm }}"
+  archive_cache_path: "{{ go_archive_cache_path }}"
   archive_destination_path: "{{ go_archive_destination_path }}"
-  archive_extracted_dir_name: go
+  archive_extracted_file_name: "{{ go_archive_extracted_file_name }}"
+  archive_destination_file_name: "{{ go_archive_destination_file_name }}"
 
 galaxy_info:
   author: Troy Kinsella
