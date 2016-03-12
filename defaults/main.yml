@@ -1,9 +1,9 @@
 ---
-go_version: 1.5.3
+go_version: 1.6
 go_archive_os: linux
 go_archive_architecture: amd64
 go_archive_base_url: https://storage.googleapis.com/golang/
-go_archive_checksum: 43afe0c5017e502630b1aea4d44b8a7f059bf60d7f29dfd58db454d4e4e0ae53
+go_archive_checksum: 5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
 go_archive_checksum_algorithm: sha256
 go_archive_cache_path: /usr/local/pkg
 go_archive_destination_path: /usr/local
