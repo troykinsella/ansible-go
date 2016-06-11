@@ -14,6 +14,7 @@ Role Variables
 * go_version: Optional. The version of go to install. Default: 1.6.2.
 * go_archive_os: Optional. The target operating system. Default: linux.
 * go_archive_architecture: Optional. The target system architecture. Default: amd64.
+* go_archive_file_name: Optional. The name of the archive file to download. Default: go{{ go_version }}.{{ go_archive_os }}-{{ go_archive_architecture }}.tar.gz.
 * go_archive_base_url: Optional. The installation archive base URL. Default: https://storage.googleapis.com/golang/.
 * go_archive_checksum: Optional. The expected installation archive checksum. Default: e40c36ae71756198478624ed1bb4ce17597b3c19d243f3f0899bb5740d56212a.
 * go_archive_checksum_algorithm: Optional. The installation archive checksum algorithm. Default: sha256.

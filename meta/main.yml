@@ -1,7 +1,7 @@
 ---
 dependencies:
 - role: troykinsella.archive
-  archive_file_name: go{{ go_version }}.{{ go_archive_os }}-{{ go_archive_architecture }}.tar.gz
+  archive_file_name: "{{ go_archive_file_name }}"
   archive_url: "{{ go_archive_base_url }}{{ archive_file_name }}"
   archive_checksum: "{{ go_archive_checksum }}"
   archive_checksum_algorithm: "{{ go_archive_checksum_algorithm }}"
