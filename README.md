@@ -1,7 +1,7 @@
 troykinsella.go
 ===============
 
-An ansible role for installing the go language from binary archive
+An ansible role for installing the go language from binary archive.
 
 Dependencies
 ------------
