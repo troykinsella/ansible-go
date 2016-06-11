@@ -21,7 +21,7 @@ Role Variables
 * go_archive_cache_path: Optional. The directory path into which the archive will be downloaded. Default: /usr/local/pkg.
 * go_archive_destination_path: Optional. The installation prefix directory path. Default: /usr/local.
 * go_archive_extracted_file_name: Optional. The expected name of the root file or directory that is extracted from the archive. Default: go.
-* go_archive_destination_file_name: Optional. Rename the extracted directory to this value.
+* go_archive_destination_file_name: Optional. Rename the extracted directory to this value. Default: go{{ go_version }}.
 
 Example Playbook
 ----------------
