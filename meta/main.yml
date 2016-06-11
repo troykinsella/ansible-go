@@ -14,7 +14,7 @@ galaxy_info:
   author: Troy Kinsella
   description: Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
   license: MIT
-  min_ansible_version: 1.6
+  min_ansible_version: 1.9
   platforms:
   - name: Ubuntu
     versions:
@@ -22,6 +22,8 @@ galaxy_info:
     - utopic
     - vivid
     - wily
+    - xenial
   galaxy_tags:
     - packaging
+    - golang
   github_branch: master
