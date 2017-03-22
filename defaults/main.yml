@@ -1,10 +1,10 @@
 ---
-go_version: 1.7.4
+go_version: 1.8
 go_archive_os: linux
 go_archive_architecture: amd64
 go_archive_file_name: go{{ go_version }}.{{ go_archive_os }}-{{ go_archive_architecture }}.tar.gz
 go_archive_base_url: https://storage.googleapis.com/golang/
-go_archive_checksum: 47fda42e46b4c3ec93fa5d4d4cc6a748aa3f9411a2a2b7e08e3a6d80d753ec8b
+go_archive_checksum: 53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca
 go_archive_checksum_algorithm: sha256
 go_archive_cache_path: /usr/local/pkg
 go_archive_destination_path: /usr/local
