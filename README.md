@@ -22,6 +22,7 @@ Role Variables
 * `go_archive_destination_path`: Optional. The installation prefix directory path. Default: `/usr/local`.
 * `go_archive_extracted_file_name`: Optional. The expected name of the root file or directory that is extracted from the archive. Default: `go`.
 * `go_archive_destination_file_name`: Optional. Rename the extracted directory to this value. Default: `go{{ go_version }}`.
+* `go_archive_destination_link_name`: Optional. Create a symbolic link having this name to the `go_archive_extracted_file_name` (or `go_archive_destination_file_name`, when specified). Default: `go`.
 
 Example Playbook
 ----------------
@@ -30,10 +31,7 @@ Example Playbook
       roles:
         - role: troykinsella.go
           go_version: 1.8
-          go_archive_os: linux
-          go_archive_architecture: amd64
           go_archive_checksum: 47fda42e46b4c3ec93fa5d4d4cc6a748aa3f9411a2a2b7e08e3a6d80d753ec8b
-          go_archive_destination_path: /usr/local
 
 License
 -------

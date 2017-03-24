@@ -10,3 +10,4 @@ go_archive_cache_path: /usr/local/pkg
 go_archive_destination_path: /usr/local
 go_archive_extracted_file_name: go
 go_archive_destination_file_name: go{{ go_version }}
+go_archive_destination_link_name: go

@@ -9,6 +9,7 @@ dependencies:
   archive_destination_path: "{{ go_archive_destination_path }}"
   archive_extracted_file_name: "{{ go_archive_extracted_file_name }}"
   archive_destination_file_name: "{{ go_archive_destination_file_name }}"
+  archive_destination_link_name: "{{ go_archive_destination_link_name }}"
 
 galaxy_info:
   author: Troy Kinsella
